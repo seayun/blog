@@ -1,7 +1,7 @@
 baseURL = "http://seayun.github.io"
 languageCode = "en"
 defaultContentLanguage = "en"                             # en / zh-cn / ... (This field determines which i18n file to use)
-title = "SeaYun"
+title = "Even - A super concise theme for Hugo"
 preserveTaxonomyNames = true
 enableRobotsTXT = true
 enableEmoji = true
@@ -21,14 +21,14 @@ googleAnalytics = ""      # UA-XXXXXXXX-X
 copyright = ""            # default: author.name ↓        # 默认为下面配置的author.name ↓
 
 [author]                  # essential                     # 必需
-  name = "SeaYun"
+  name = "Seayun"
 
 [sitemap]                 # essential                     # 必需
   changefreq = "weekly"
   priority = 0.5
   filename = "sitemap.xml"
 
-[[menu.main]]        
+[[menu.main]]             # config your menu              # 配置目录
   name = "Home"
   weight = 10
   identifier = "home"
@@ -48,7 +48,11 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   weight = 40
   identifier = "archives"
   url = "/post/"
-
+[[menu.main]]
+  name = "关于"
+  weight = 50
+  identifier = "about"
+  url = "/about/"
 
 
 
@@ -62,7 +66,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   gitRepo = ""
 
   # site info (optional)                                  # 站点信息（可选，不需要的可以直接注释掉）
-  logoTitle = "SeaYun"        # default: the title value    # 默认值: 上面设置的title值
+  logoTitle = "Even"        # default: the title value    # 默认值: 上面设置的title值
   keywords = ["Hugo", "theme","even"]
   description = "Hugo theme even example site."
 
