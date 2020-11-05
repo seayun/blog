@@ -1,4 +1,4 @@
-baseURL = "https://seayun.github.io"
+baseURL = "http://seayun.github.io"
 languageCode = "en"
 defaultContentLanguage = "en"                             # en / zh-cn / ... (This field determines which i18n file to use)
 title = "SeaYun"
@@ -18,7 +18,7 @@ hasCJKLanguage = true     # has chinese/japanese/korean ? # 自动检测是否�
 paginate = 5                                              # 首页每页显示的文章数
 disqusShortname = ""      # disqus_shortname
 googleAnalytics = ""      # UA-XXXXXXXX-X
-copyright = "Seayun"            # default: author.name ↓        # 默认为下面配置的author.name ↓
+copyright = ""            # default: author.name ↓        # 默认为下面配置的author.name ↓
 
 [author]                  # essential                     # 必需
   name = "SeaYun"
@@ -29,22 +29,22 @@ copyright = "Seayun"            # default: author.name ↓        # 默认为下
   filename = "sitemap.xml"
 
 [[menu.main]]        
-  name = "随笔"
+  name = "Home"
   weight = 10
   identifier = "home"
   url = "/"
 [[menu.main]]
-  name = "专栏/话题"
+  name = "Tags"
   weight = 20
   identifier = "tags"
   url = "/tags/"
 [[menu.main]]
-  name = "标签"
+  name = "Categories"
   weight = 30
   identifier = "categories"
   url = "/categories/"
 [[menu.main]]
-  name = "日积月累"
+  name = "Archives"
   weight = 40
   identifier = "archives"
   url = "/post/"
@@ -182,21 +182,21 @@ copyright = "Seayun"            # default: author.name ↓        # 默认为下
     alipay = "/path/to/your/alipay-qr-code.png"           # 支付宝二维码
 
   [params.social]                                         # 社交链接
-    a-email = "mailto:seayun@aliyun.com"
+    a-email = "mailto:your@email.com"
     #b-stack-overflow = "http://localhost:1313"
     #c-twitter = "http://localhost:1313"
     #d-facebook = "http://localhost:1313"
     #e-linkedin = "http://localhost:1313"
     #f-google = "http://localhost:1313"
-    g-github = "https://www.github.com/seayun"
+    g-github = "http://localhost:1313"
     #h-weibo = "http://localhost:1313"
     i-zhihu = "http://localhost:1313"
     #j-douban = "http://localhost:1313"
     #k-pocket = "http://localhost:1313"
-    #l-tumblr = "http://localhost:1313"
-    #m-instagram = "http://localhost:1313"
-    #n-gitlab = "http://localhost:1313"
-    #o-bilibili = "http://localhost:1313"
+    l-tumblr = "http://localhost:1313"
+    m-instagram = "http://localhost:1313"
+    n-gitlab = "http://localhost:1313"
+    o-bilibili = "http://localhost:1313"
 
 # See https://gohugo.io/about/hugo-and-gdpr/
 [privacy]
@@ -214,18 +214,18 @@ copyright = "Seayun"            # default: author.name ↓        # 默认为下
 
 # 将下面这段配置取消注释可以使 hugo 生成 .md 文件
 # Uncomment these options to make hugo output .md files.
-[mediaTypes]
-  [mediaTypes."text/plain"]
-    suffixes = ["md"]
-
-[outputFormats.MarkDown]
-  mediaType = "text/plain"
-  isPlainText = true
-  isHTML = false
-
-[outputs]
-  home = ["HTML", "RSS"]
-  page = ["HTML", "MarkDown"]
-  section = ["HTML", "RSS"]
-  taxonomy = ["HTML", "RSS"]
-  taxonomyTerm = ["HTML"]
+#[mediaTypes]
+#  [mediaTypes."text/plain"]
+#    suffixes = ["md"]
+#
+#[outputFormats.MarkDown]
+#  mediaType = "text/plain"
+#  isPlainText = true
+#  isHTML = false
+#
+#[outputs]
+#  home = ["HTML", "RSS"]
+#  page = ["HTML", "MarkDown"]
+#  section = ["HTML", "RSS"]
+#  taxonomy = ["HTML", "RSS"]
+#  taxonomyTerm = ["HTML"]
